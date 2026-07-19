@@ -5,7 +5,7 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
   "mainAssemblyName": "BlogProjBlazor",
   "applicationEnvironment": "Development",
   "resources": {
-    "hash": "sha256-fyMTr4OIYomgLEf7qilgYmvzWxcw+ca5/E+AbVNxtAc=",
+    "hash": "sha256-JQq9TDBt+dK6NMJ+c9RcXtKpwYKe2rIA5+Fl9LxX534=",
     "jsModuleNative": [
       {
         "name": "dotnet.native.ykrnppwhq2.js"
@@ -1242,16 +1242,16 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
       },
       {
         "virtualPath": "BlogProjBlazor.wasm",
-        "name": "BlogProjBlazor.2ujv5c99i1.wasm",
-        "integrity": "sha256-KhtU0g4/yn1XqmkGn0HfUKA7NfB7GNOGX7HZmLZ1ksY=",
+        "name": "BlogProjBlazor.e3n9cfrdij.wasm",
+        "integrity": "sha256-KvWn9jIZWSRQIH2uIVoWFy4Ic5JLlfcHHYXz/ZXq4J0=",
         "cache": "force-cache"
       }
     ],
     "pdb": [
       {
         "virtualPath": "BlogProjBlazor.pdb",
-        "name": "BlogProjBlazor.fhxl2ie88a.pdb",
-        "integrity": "sha256-w0aX/DXyzndxMwa3wRlUmO6OK/cFpF9ea0/AW8W7L8M=",
+        "name": "BlogProjBlazor.e2byg5fuvq.pdb",
+        "integrity": "sha256-hiB8nR7jqqkPGG06l3dVBlcb4dRD0td/eGvELdCRUOo=",
         "cache": "force-cache"
       }
     ],

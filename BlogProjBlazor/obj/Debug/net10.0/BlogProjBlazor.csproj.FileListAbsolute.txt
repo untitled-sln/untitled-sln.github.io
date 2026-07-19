@@ -207,9 +207,6 @@ C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\bin\Debug\net
 C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\bin\Debug\net10.0\wwwroot\_framework\icudt_CJK.tjcz0u77k5.dat
 C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\bin\Debug\net10.0\wwwroot\_framework\icudt_EFIGS.tptq2av103.dat
 C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\bin\Debug\net10.0\wwwroot\_framework\icudt_no_CJK.lfu7j35m59.dat
-C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\bin\Debug\net10.0\wwwroot\_framework\BlogProjBlazor.2ujv5c99i1.wasm
-C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\bin\Debug\net10.0\wwwroot\_framework\BlogProjBlazor.fhxl2ie88a.pdb
-C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\bin\Debug\net10.0\wwwroot\_framework\dotnet.4n50vseyxg.js
 C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\bin\Debug\net10.0\wwwroot\_framework\blazor.webassembly.66stpp682q.js.gz
 C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\bin\Debug\net10.0\wwwroot\_framework\Microsoft.AspNetCore.Authorization.roqc1km2rj.wasm.gz
 C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\bin\Debug\net10.0\wwwroot\_framework\Microsoft.AspNetCore.Components.uddsvpv1sv.wasm.gz
@@ -418,9 +415,6 @@ C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\bin\Debug\net
 C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\bin\Debug\net10.0\wwwroot\_framework\icudt_CJK.tjcz0u77k5.dat.gz
 C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\bin\Debug\net10.0\wwwroot\_framework\icudt_EFIGS.tptq2av103.dat.gz
 C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\bin\Debug\net10.0\wwwroot\_framework\icudt_no_CJK.lfu7j35m59.dat.gz
-C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\bin\Debug\net10.0\wwwroot\_framework\BlogProjBlazor.2ujv5c99i1.wasm.gz
-C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\bin\Debug\net10.0\wwwroot\_framework\BlogProjBlazor.fhxl2ie88a.pdb.gz
-C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\bin\Debug\net10.0\wwwroot\_framework\dotnet.4n50vseyxg.js.gz
 C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\bin\Debug\net10.0\BlogProjBlazor.staticwebassets.runtime.json
 C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\bin\Debug\net10.0\BlogProjBlazor.staticwebassets.endpoints.json
 C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\bin\Debug\net10.0\BlogProjBlazor.dll
@@ -1109,10 +1103,6 @@ C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\obj\Debug\net
 C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\obj\Debug\net10.0\compressed\i8dw0x69o4-{0}-tjcz0u77k5-tjcz0u77k5.gz
 C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\obj\Debug\net10.0\compressed\19yguzs612-{0}-tptq2av103-tptq2av103.gz
 C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\obj\Debug\net10.0\compressed\w809568lyn-{0}-lfu7j35m59-lfu7j35m59.gz
-C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\obj\Debug\net10.0\compressed\g2uzfpiaqj-{0}-2ujv5c99i1-2ujv5c99i1.gz
-C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\obj\Debug\net10.0\compressed\ozl1pgdbdu-{0}-fhxl2ie88a-fhxl2ie88a.gz
-C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\obj\Debug\net10.0\compressed\jm3k8r5clp-{0}-4n50vseyxg-4n50vseyxg.gz
-C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\obj\Debug\net10.0\compressed\r9ll467tvw-{0}-vtw4e057cn-vtw4e057cn.gz
 C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\obj\Debug\net10.0\staticwebassets.build.json
 C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\obj\Debug\net10.0\staticwebassets.build.json.cache
 C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\obj\Debug\net10.0\staticwebassets.development.json
@@ -1125,3 +1115,13 @@ C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\obj\Debug\net
 C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\obj\Debug\net10.0\ref\BlogProjBlazor.dll
 C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\obj\Debug\net10.0\compressed\2pkjku6owa-{0}-braib80kpw-braib80kpw.gz
 C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\obj\Debug\net10.0\compressed\i6292td965-{0}-braib80kpw-braib80kpw.gz
+C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\bin\Debug\net10.0\wwwroot\_framework\BlogProjBlazor.e3n9cfrdij.wasm
+C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\bin\Debug\net10.0\wwwroot\_framework\BlogProjBlazor.e2byg5fuvq.pdb
+C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\bin\Debug\net10.0\wwwroot\_framework\dotnet.db2e8v4360.js
+C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\bin\Debug\net10.0\wwwroot\_framework\BlogProjBlazor.e3n9cfrdij.wasm.gz
+C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\bin\Debug\net10.0\wwwroot\_framework\BlogProjBlazor.e2byg5fuvq.pdb.gz
+C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\bin\Debug\net10.0\wwwroot\_framework\dotnet.db2e8v4360.js.gz
+C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\obj\Debug\net10.0\compressed\g2uzfpiaqj-{0}-e3n9cfrdij-e3n9cfrdij.gz
+C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\obj\Debug\net10.0\compressed\ozl1pgdbdu-{0}-e2byg5fuvq-e2byg5fuvq.gz
+C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\obj\Debug\net10.0\compressed\jm3k8r5clp-{0}-db2e8v4360-db2e8v4360.gz
+C:\Users\zlx35\RiderProjects\untitled-sln.github.io\BlogProjBlazor\obj\Debug\net10.0\compressed\r9ll467tvw-{0}-mpyxxf4qwl-mpyxxf4qwl.gz
