@@ -2390,8 +2390,8 @@
     },
     "Blazor3D/1.0.0": {
       "type": "project",
-      "path": "../../Blazor3D-Core/src/dotnet/Blazor3D/Blazor3D/HomagGroup.Blazor3D.csproj",
-      "msbuildProject": "../../Blazor3D-Core/src/dotnet/Blazor3D/Blazor3D/HomagGroup.Blazor3D.csproj"
+      "path": "../Blazor3D-Core/src/dotnet/Blazor3D/Blazor3D/HomagGroup.Blazor3D.csproj",
+      "msbuildProject": "../Blazor3D-Core/src/dotnet/Blazor3D/Blazor3D/HomagGroup.Blazor3D.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2436,8 +2436,8 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\zlx35\\RiderProjects\\Blazor3D-Core\\src\\dotnet\\Blazor3D\\Blazor3D\\HomagGroup.Blazor3D.csproj": {
-              "projectPath": "C:\\Users\\zlx35\\RiderProjects\\Blazor3D-Core\\src\\dotnet\\Blazor3D\\Blazor3D\\HomagGroup.Blazor3D.csproj"
+            "C:\\Users\\zlx35\\RiderProjects\\untitled-sln.github.io\\Blazor3D-Core\\src\\dotnet\\Blazor3D\\Blazor3D\\HomagGroup.Blazor3D.csproj": {
+              "projectPath": "C:\\Users\\zlx35\\RiderProjects\\untitled-sln.github.io\\Blazor3D-Core\\src\\dotnet\\Blazor3D\\Blazor3D\\HomagGroup.Blazor3D.csproj"
             }
           }
         }
@@ -2799,13 +2799,5 @@
         "#import": []
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Error occurred while getting package vulnerability data: The SSL connection could not be established, see inner exception."
-    }
-  ]
+  }
 }

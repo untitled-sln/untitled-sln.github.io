@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogProjBlazor", "BlogProjBlazor/BlogProjBlazor.csproj", "{31513454-5510-409B-88BC-705F9183CF56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomagGroup.Blazor3D", "..\Blazor3D-Core\src\dotnet\Blazor3D\Blazor3D\HomagGroup.Blazor3D.csproj", "{EBBBCED9-074E-4D94-9DDB-C461F2AB0B69}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomagGroup.Blazor3D", "Blazor3D-Core\src\dotnet\Blazor3D\Blazor3D\HomagGroup.Blazor3D.csproj", "{EBBBCED9-074E-4D94-9DDB-C461F2AB0B69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
