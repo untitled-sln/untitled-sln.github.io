@@ -1,4 +1,16 @@
 ﻿@page "/"
+@using HomagGroup.Blazor3D.Cameras
+@using HomagGroup.Blazor3D.Core
+@using HomagGroup.Blazor3D.Enums
+@using HomagGroup.Blazor3D.Events
+@using HomagGroup.Blazor3D.Lights
+@using HomagGroup.Blazor3D.Maths
+@using HomagGroup.Blazor3D.Objects
+@using HomagGroup.Blazor3D.Scenes
+@using HomagGroup.Blazor3D.Settings
+@using HomagGroup.Blazor3D.Viewers
+
+@implements IDisposable
 
 <PageTitle>Home</PageTitle>
 
@@ -13,3 +25,78 @@
     </iframe>
 <p>还是Blazor好用,我爱dotnet</p>
 <img src="meme.jpeg" width="240" alt=""/>
+
+<Viewer Camera="camera" @ref="@View3D1" ViewerSettings="@settings" Scene="@scene" />
+@code
+{
+    private Viewer View3D1 = null!;
+
+    private readonly Scene scene = new();
+
+    private readonly ViewerSettings settings = new()
+    {
+        ContainerId = "example1"
+    };
+
+    private PerspectiveCamera camera;
+    private Object3D? cameraParent;
+
+    protected override void OnInitialized()
+    {
+        // 环境光
+        scene.Add(new AmbientLight());
+
+        // 点光源
+        scene.Add(new PointLight()
+        {
+            Position = new Vector3
+            {
+                X = 1,
+                Y = 3,
+                Z = 0
+            }
+        });
+
+        // 创建相机（只是加入 Scene）
+        camera = new PerspectiveCamera();
+
+        cameraParent = new Object3D();
+        cameraParent.Add(camera);
+
+        camera.Position = new Vector3(5, 0, 0);
+
+        scene.Add(cameraParent);
+    }
+
+    protected override Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            View3D1.JsModuleLoaded += OnJsModuleLoaded;
+        }
+
+        return Task.CompletedTask;
+    }
+
+    private async Task OnJsModuleLoaded()
+    {
+        var settings = new ImportSettings
+        {
+            Format = Import3DFormats.Gltf,
+            FileURL = "playGS.glb"
+        };
+        var uuid = await View3D1.Import3DModelAsync(settings);
+        Console.WriteLine($"模型导入成功：{uuid}");
+
+        // 如果库没有自动刷新，可以调用
+        await View3D1.UpdateScene();
+    }
+
+    public void Dispose()
+    {
+        if (View3D1 != null)
+        {
+            View3D1.JsModuleLoaded -= OnJsModuleLoaded;
+        }
+    }
+}
