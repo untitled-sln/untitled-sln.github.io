@@ -15,7 +15,6 @@ class Header extends StatelessComponent {
       nav([
         for (var route in [
           (label: 'Home', path: '/'),
-          (label: 'About', path: '/about'),
         ])
           div(classes: activePath == route.path ? 'active' : null, [
             Link(to: route.path, child: .text(route.label)),
@@ -36,7 +35,7 @@ class Header extends StatelessComponent {
         css('&').styles(
           display: .flex,
           height: 3.em,
-          radius: .all(.circular(10.px)), 
+          radius: .all(.circular(10.px)),
           overflow: .clip,
           justifyContent: .spaceBetween,
           backgroundColor: primaryColor,
@@ -65,7 +64,7 @@ class Header extends StatelessComponent {
             radius: .circular(1.px),
             backgroundColor: Colors.white,
           ),
-        ])
+        ]),
       ]),
     ]),
   ];

@@ -30,9 +30,10 @@ plugins:
 
 # Uncomment the following section to enable or disable additional rules.
 
-# linter:
-#   rules:
-#     camel_case_types: true
+linter:
+   rules:
+     camel_case_types: true
+
 
 # For more information about the core and recommended set of lints, see
 # https://dart.dev/go/core-lints
@@ -41,6 +42,5 @@ formatter:
   # Change this to your preferred line length.
   page_width: 120
   trailing_commas: preserve
-
 # For additional information about configuring this file, see
 # https://dart.dev/guides/language/analysis-options

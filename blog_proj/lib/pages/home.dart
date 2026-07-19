@@ -17,7 +17,6 @@ class Home extends StatefulComponent {
 }
 
 class HomeState extends State<Home> {
-
   @override
   void initState() {
     super.initState();
@@ -35,12 +34,13 @@ class HomeState extends State<Home> {
   @override
   Component build(BuildContext context) {
     return section([
-      img(src: 'images/meme.jpeg', width: 80),
+      img(src: 'images/meme.jpeg', width: 240),
       h1([.text('Hello world')]),
-      p([.text('This web was changed to Jasper')]),
-      p([.text('我得研究一下Jasper')]),
-      div(styles: Styles(height: 100.px), []),
-      // const Counter(),
+      p([.text('This web was changed to Jaspr')]),
+      p([.text('我得研究一下Jaspr')]),
+      div(styles: Styles(height: 100.px), [
+        const Counter(),
+      ]),
     ]);
   }
 }

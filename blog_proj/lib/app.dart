@@ -1,10 +1,5 @@
 import 'package:jaspr/dom.dart';
 import 'package:jaspr/jaspr.dart';
-import 'package:jaspr_router/jaspr_router.dart';
-
-import 'components/header.dart';
-import 'pages/about.dart';
-import 'pages/home.dart';
 
 // The main component of your application.
 //
@@ -16,13 +11,24 @@ class App extends StatelessComponent {
   @override
   Component build(BuildContext context) {
     // This method is rerun every time the component is rebuilt.
-    
+
     // Renders a <div class="main"> html element with children.
-    return div(classes: 'main', [
-      const Header(),
-      Router(routes: [
-        Route(path: '/', title: 'No other pages', builder: (context, state) => const Home()),
-        // Route(path: '/about', title: 'About', builder: (context, state) => const About()),
+    return body(classes: 'layout', [
+      header([.text("头部")]),
+      main_(id: "main",[
+        aside(classes: 'sidebar', [
+          button(classes: 'toggle', [.text('☰')]),
+          h2([.text('Jaspr Demo')]),
+          ul([
+            li([.text('🏠 首页')]),
+            li([.text('📁 文件')]),
+            li([.text('⚙ 设置')]),
+          ]),
+        ]),
+        section(classes: 'content', [
+          h1([.text('主页')]),
+          p([.text('Hello Jaspr')]),
+        ]),
       ]),
     ]);
   }
@@ -33,13 +39,13 @@ class App extends StatelessComponent {
   // Must be a variable or getter of type [List<StyleRule>].
   @css
   static List<StyleRule> get styles => [
-    css('.main', [
+    css('.layout', [
       // The '&' refers to the parent selector of a nested style rules.
       css('&').styles(
         display: .flex,
-        height: 100.vh,
-        flexDirection: .column,
-        flexWrap: .wrap,
+        // height: 100.vh,
+        // flexDirection: .column,
+        // flexWrap: .wrap,
       ),
       css('section').styles(
         display: .flex,
@@ -49,5 +55,9 @@ class App extends StatelessComponent {
         flex: Flex(grow: 1),
       ),
     ]),
+    css('main').styles(
+      display: .flex,
+      flex: Flex(grow: 1),
+    ),
   ];
 }

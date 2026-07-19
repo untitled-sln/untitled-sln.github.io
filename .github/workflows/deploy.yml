@@ -1,60 +1,62 @@
-name: Deploy to GitHub Pages
+name: Deploy Blazor WASM
 
 on:
-  push:
-    branches: ["main"]
-    paths-ignore:
-      - '**.md'
-      - '**.txt'
-      - 'docs/**'
-  workflow_dispatch:
+    push:
+        branches:
+            - main
+        paths:
+            - "BlogProjBlazor"
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+    contents: read
+    pages: write
+    id-token: write
 
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+    group: pages
+    cancel-in-progress: true
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./blog_proj
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+    build:
 
-      - name: Setup Dart
-        uses: dart-lang/setup-dart@v1
+        runs-on: ubuntu-latest
 
-      - name: Install dependencies
-        run: dart pub get
+        steps:
 
-      - name: Activate jaspr_cli
-        run: dart pub global activate jaspr_cli
+            - uses: actions/checkout@v4
 
-      - name: Build site
-        run: jaspr build
+            - uses: actions/setup-dotnet@v4
+              with:
+                  dotnet-version: 10.0.x
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
+            - name: Restore
+              working-directory: Blog
+              run: dotnet restore
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: 'blog_proj/build/jaspr'
+            - name: Publish
+              working-directory: Blog
+              run: dotnet publish -c Release -o publish
 
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+            - name: Upload Pages Artifact
+              uses: actions/upload-pages-artifact@v3
+              with:
+                  path: Blog/publish/wwwroot
+
+    deploy:
+
+        needs: build
+
+        runs-on: ubuntu-latest
+
+        environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
+
+        permissions:
+            pages: write
+            id-token: write
+
+        steps:
+
+            - id: deployment
+              uses: actions/deploy-pages@v4
