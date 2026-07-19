@@ -28,11 +28,11 @@ jobs:
                   dotnet-version: 10.0.x
 
             - name: Restore
-              working-directory: Blog
+              working-directory: BlogProjBlazor
               run: dotnet restore
 
             - name: Publish
-              working-directory: Blog
+              working-directory: BlogProjBlazor
               run: dotnet publish -c Release -o publish
 
             - name: Upload Pages Artifact
