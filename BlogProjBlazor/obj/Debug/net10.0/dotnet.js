@@ -5,7 +5,7 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
   "mainAssemblyName": "BlogProjBlazor",
   "applicationEnvironment": "Development",
   "resources": {
-    "hash": "sha256-CyLQ3a24b5wjRxXg4mwoxHje/SmnyEpwKkQOznYbbnQ=",
+    "hash": "sha256-QaGWMpISMkwmBZ59axrb0H2q/728DZD3UzVvaUoSZuQ=",
     "jsModuleNative": [
       {
         "name": "dotnet.native.ykrnppwhq2.js"
@@ -242,6 +242,12 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
         "virtualPath": "Newtonsoft.Json.wasm",
         "name": "Newtonsoft.Json.ryat7hvx56.wasm",
         "integrity": "sha256-PaicHOw1U7HF05kEvZI0Rgg1nwdA8hrzbzdkw1qgUuU=",
+        "cache": "force-cache"
+      },
+      {
+        "virtualPath": "Blazor3D.wasm",
+        "name": "Blazor3D.3jti4kg53w.wasm",
+        "integrity": "sha256-//ljJB1qowwmEiKp/6DQpsKSTBOohkhu88yMCE+ffpo=",
         "cache": "force-cache"
       },
       {
@@ -1265,29 +1271,17 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
         "cache": "force-cache"
       },
       {
-        "virtualPath": "Blazor3D.wasm",
-        "name": "Blazor3D.p6n648ntwu.wasm",
-        "integrity": "sha256-H/GvuMbq+Oyj3w7nsyPHZdSJ2nMysaSxpR4rZjOO/Tc=",
-        "cache": "force-cache"
-      },
-      {
         "virtualPath": "BlogProjBlazor.wasm",
-        "name": "BlogProjBlazor.60sadjl5kt.wasm",
-        "integrity": "sha256-RpV6yB303Sd+zcDNtHTXJBd5mRTH+xBULuMwtzGP/M4=",
+        "name": "BlogProjBlazor.impp3wdz5g.wasm",
+        "integrity": "sha256-Br8AyieZZtiyfZqcMtrUEZxbCTiIL96CnOlAmva4klI=",
         "cache": "force-cache"
       }
     ],
     "pdb": [
       {
-        "virtualPath": "Blazor3D.pdb",
-        "name": "Blazor3D.bfm9c7koqn.pdb",
-        "integrity": "sha256-xyH+qO84QExuQUbtrN2PdLm+mGHRAXmaOlbjtzKAw+M=",
-        "cache": "force-cache"
-      },
-      {
         "virtualPath": "BlogProjBlazor.pdb",
-        "name": "BlogProjBlazor.8e23nm79wq.pdb",
-        "integrity": "sha256-IJLUhquVjDjeIzY3uSp1TZ91EXqs3VjLaqBW6HWP1BE=",
+        "name": "BlogProjBlazor.m0mcxuxez5.pdb",
+        "integrity": "sha256-doPVfqcgSC5fVf4Po8xq05VkqzYDQ+/Oznciu4KnzI0=",
         "cache": "force-cache"
       }
     ],

@@ -1,4 +1,4 @@
-@import '_content/Blazor3D/Blazor3D.njdvag7r8n.bundle.scp.css';
+@import '_content/ThreeJsBlazor/ThreeJsBlazor.n7i9ybyhxv.bundle.scp.css';
 
 /* /Layout/MainLayout.razor.rz.scp.css */
 .page[b-9qrh9etufe] {
@@ -162,4 +162,19 @@ main[b-9qrh9etufe] {
         height: calc(100vh - 3.5rem);
         overflow-y: auto;
     }
+}
+/* /Pages/Counter.razor.rz.scp.css */
+.btn-primary[b-6lu14uops5] {
+    background-color: #e685b5;
+    fill-color: #e685b5;
+}
+/* /Pages/Home.razor.rz.scp.css */
+.viewContainer[b-xko5bfag04] {
+    width:500px !important;
+    height:200px !important;
+}
+
+.viewer3dContainer[b-xko5bfag04] {
+    width:100%;
+    height:100%;
 }

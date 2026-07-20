@@ -1,0 +1,9 @@
+﻿.viewContainer {
+    width:500px !important;
+    height:200px !important;
+}
+
+.viewer3dContainer {
+    width:100%;
+    height:100%;
+}

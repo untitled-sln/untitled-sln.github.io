@@ -1,5 +1,6 @@
 ﻿@page "/"
 @using HomagGroup.Blazor3D.Cameras
+@using HomagGroup.Blazor3D.Controls
 @using HomagGroup.Blazor3D.Core
 @using HomagGroup.Blazor3D.Enums
 @using HomagGroup.Blazor3D.Lights
@@ -23,8 +24,9 @@
     </iframe>
 <p>还是Blazor好用,我爱dotnet</p>
 <img src="meme.jpeg" width="240" alt=""/>
-
-<Viewer Camera="camera" @ref="@View3D1" ViewerSettings="@settings" Scene="@scene" />
+<div class="viewContainer">
+<Viewer  @ref="@View3D1" ViewerSettings="@settings" Scene="@scene" />
+</div>
 @code
 {
     private Viewer View3D1 = null!;
@@ -56,21 +58,26 @@
         });
 
         // 创建相机（只是加入 Scene）
-        camera = new PerspectiveCamera();
-
-        cameraParent = new Object3D();
-        cameraParent.Add(camera);
-
-        camera.Position = new Vector3(5, 0, 0);
-
-        scene.Add(cameraParent);
+        // camera = new PerspectiveCamera();
+        // cameraParent = new Object3D();
+        // cameraParent.Add(camera);
+        //
+        // camera.Position = new Vector3(5, 0, 0);
+        //
+        // scene.Add(cameraParent);
     }
 
     protected override Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
         {
-            View3D1.JsModuleLoaded += OnJsModuleLoaded;
+            View3D1.JsModuleLoaded += OnJsModuleLoaded; 
+            View3D1.SetOrbitControls(new OrbitControls
+            {
+                AutoRotate = true,
+                
+            });
+            
         }
 
         return Task.CompletedTask;
@@ -78,6 +85,7 @@
 
     private async Task OnJsModuleLoaded()
     {
+
         var settings = new ImportSettings
         {
             Format = Import3DFormats.Gltf,
