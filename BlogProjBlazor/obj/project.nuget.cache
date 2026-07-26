@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "CekOJBxwDK8=",
+  "dgSpecHash": "cWyJE52tkFQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\zlx35\\RiderProjects\\untitled-sln.github.io\\BlogProjBlazor\\BlogProjBlazor.csproj",
   "expectedPackageFiles": [
+    "D:\\program\\NuGet\\packages\\markdig\\1.3.2\\markdig.1.3.2.nupkg.sha512",
     "D:\\program\\NuGet\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.5\\microsoft.aspnetcore.app.internal.assets.10.0.5.nupkg.sha512",
     "D:\\program\\NuGet\\packages\\microsoft.aspnetcore.authorization\\10.0.10\\microsoft.aspnetcore.authorization.10.0.10.nupkg.sha512",
     "D:\\program\\NuGet\\packages\\microsoft.aspnetcore.components\\10.0.10\\microsoft.aspnetcore.components.10.0.10.nupkg.sha512",
