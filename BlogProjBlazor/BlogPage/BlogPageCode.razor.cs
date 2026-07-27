@@ -1,4 +1,6 @@
-﻿using Markdig.Extensions.Tables;
+﻿using System;
+using System.Linq;
+using Markdig.Extensions.Tables;
 using Markdig.Syntax;
 using Markdig.Syntax.Inlines;
 using Microsoft.AspNetCore.Components.Rendering;
@@ -122,13 +124,21 @@ public partial class BlogPageCode
     {
         switch (inline)
         {
-            case ContainerInline container:
-                throw new Exception("ContainerInline应该被预处理");
+
             case LiteralInline literal:
                 builder.OpenElement(0, "p");
                 builder.AddContent(0,literal.Content+"喵");
                 builder.CloseElement();
                 break;
+            case EmphasisInline emphasis:
+                builder.OpenElement(0, "p");
+                builder.AddContent(0,"强调");
+                builder.CloseElement();
+                break;
+            
+            
+            case ContainerInline container:
+                throw new Exception("ContainerInline应该被预处理");
         }
     }
 }

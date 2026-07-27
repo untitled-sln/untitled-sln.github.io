@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <script>
+        // 获取当前 404 页面的完整路径，例如：/counter 或 /posts/123
+        var path = window.location.pathname;
+
+        // 保留查询字符串（如果有），例如 ?id=1
+        var query = window.location.search;
+
+        // 保留哈希值（如果有），例如 #section
+        var hash = window.location.hash;
+
+        // 拼接目标 URL，将原始路径作为查询参数 'redirect' 传给 index.html
+        // 同时保留原来的 query 和 hash
+        var redirectUrl = '/index.html?redirect=' + encodeURIComponent(path + query) + hash;
+
+        // 执行重定向
+        window.location.replace(redirectUrl);
+    </script>
+</head>
+<body>
+<!-- 如果 JS 被禁用，给用户一个备用提示（极少数情况） -->
+<p>Redirecting to <a href="/index.html">homepage</a>...</p>
+</body>
+</html>
