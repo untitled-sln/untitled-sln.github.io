@@ -17,62 +17,31 @@
 </head>
 
 <body>
-<div id="app">
-    <svg class="loading-progress">
-        <circle r="40%" cx="50%" cy="50%" />
-        <circle r="40%" cx="50%" cy="50%" />
-    </svg>
-    <div class="loading-progress-text"></div>
-</div>
+    <div id="app">
+        <svg class="loading-progress">
+            <circle r="40%" cx="50%" cy="50%" />
+            <circle r="40%" cx="50%" cy="50%" />
+        </svg>
+        <div class="loading-progress-text"></div>
+    </div>
 
-<div id="blazor-error-ui">
-    An unhandled error has occurred.
-    <a href="." class="reload">Reload</a>
-    <span class="dismiss">🗙</span>
-</div>
-
-<!-- ========== 新增：GitHub Pages 404 劫持脚本 ========== -->
-<script>
-    (function() {
-        // 解析当前 URL 的查询参数
-        var params = new URLSearchParams(window.location.search);
-        var redirectPath = params.get('redirect');
-
-        // 如果存在 redirect 参数，说明是从 404.html 跳转过来的
-        if (redirectPath) {
-            // 解码得到原始路径（例如 /counter）
-            var target = decodeURIComponent(redirectPath);
-
-            // 使用 History API 替换地址栏，不触发页面刷新
-            // 让浏览器地址显示为原始路径，而不是 index.html?redirect=...
-            window.history.replaceState(null, '', target);
-        }
-    })();
-</script>
-<!-- ========== 劫持脚本结束 ========== -->
-
-<!-- 
-    修改点：移除 #[.{fingerprint}] 占位符
-    Blazor 的指纹功能在发布时会自动处理，但这里不能写成 #[.{fingerprint}]
-    应该直接引用 _framework/blazor.webassembly.js
-    或者使用动态加载方式（见下面的注释）
--->
-<script src="_framework/blazor.webassembly.js"></script>
-
-<!-- 
-    如果你确实需要使用带指纹的版本，可以这样写（但需要确保发布后文件名匹配）：
-    <script src="_framework/blazor.webassembly.js" autostart="false"></script>
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="." class="reload">Reload</a>
+        <span class="dismiss">🗙</span>
+    </div>
     <script>
-        // 手动启动 Blazor，并自动检测指纹文件
-        Blazor.start({
-            loadBootResource: function (type, name, defaultUri, integrity) {
-                if (type === 'manifest') return defaultUri;
-                // 这里会自动处理 fingerprint
-                return defaultUri;
+        (function () {
+            var redirect = sessionStorage.redirect;
+            delete sessionStorage.redirect;
+
+            if (redirect &&
+                redirect !== location.href) {
+                history.replaceState(null, null, redirect);
             }
-        });
+        })();
     </script>
--->
+    <script src="_framework/blazor.webassembly#[.{fingerprint}].js"></script>
 </body>
 
 </html>
