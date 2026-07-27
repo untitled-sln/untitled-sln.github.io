@@ -4,11 +4,16 @@
     <meta charset="utf-8">
     <title>Redirecting...</title>
     <script>
-        sessionStorage.redirect = location.href;
-        location.replace(
-            location.origin +
-            "BlogProjBlazor"
+        const path = window.location.pathname;
+
+        // 保存原始路径
+        sessionStorage.setItem(
+            "redirect",
+            path + window.location.search + window.location.hash
         );
+
+        // 回到 Blazor 首页
+        window.location.replace("/");
     </script>
 </head>
 <body>
