@@ -1,0 +1,28 @@
+﻿@inherits ErrorBoundaryBase
+
+@inject ErrorService ErrorService
+
+
+@if (CurrentException == null)
+{
+    @ChildContent
+}
+else
+{
+    <h1>遇到异常</h1>
+    <p>内容:</p>
+    <p>@CurrentException.Message</p>
+    <p>调用堆栈</p>
+    <p>@CurrentException.StackTrace</p>
+    <p>你不需要看懂以上任何内容,现在你应该尝试刷新</p>
+}
+
+
+@code {
+
+    protected override Task OnErrorAsync(Exception exception)
+    {
+        ErrorService.SetError(exception);
+        return Task.CompletedTask;
+    }
+}

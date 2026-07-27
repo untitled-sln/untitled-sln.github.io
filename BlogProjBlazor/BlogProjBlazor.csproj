@@ -5,6 +5,7 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <OverrideHtmlAssetPlaceholders>true</OverrideHtmlAssetPlaceholders>
+        <WarningsAsErrors>RZ2012</WarningsAsErrors>
     </PropertyGroup>
 
     <ItemGroup>
@@ -17,7 +18,6 @@
 
     <ItemGroup>
       <Folder Include="MainMenu\" />
-      <Folder Include="wwwroot\BlogMDSrc\" />
     </ItemGroup>
 
     <ItemGroup>

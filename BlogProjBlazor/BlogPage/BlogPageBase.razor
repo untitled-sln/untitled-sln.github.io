@@ -1,24 +1,31 @@
 ﻿@using System.Diagnostics.CodeAnalysis
 @using Markdig
 @using Markdig.Syntax
+@using Markdig.Syntax.Inlines
 @using Microsoft.AspNetCore.Components.Rendering
 @using Block = Markdig.Syntax.Block
 @inject HttpClient Http
 <h3>BlogPage</h3>
-
 @code {
-    [Parameter] [StringSyntax(StringSyntaxAttribute.Uri)]
-    public required string MarkPath { get; set; }
+
+    [Parameter]
+    [StringSyntax(StringSyntaxAttribute.Uri)]
+    public string MarkPath { get; set; } = "BlogMDSrc/Test.md";
+    
     private MarkdownDocument? _document;
+    
+    protected RenderFragment? _renderFragment;
+    
     protected override async Task OnParametersSetAsync()
     {
         var markdown = await Http.GetStringAsync(MarkPath);
-
+        
         _document = Markdown.Parse(markdown,new MarkdownPipelineBuilder()
             .UseAdvancedExtensions()
             .Build());
-        RenderDocument(_document);
+        _renderFragment = RenderDocument(_document);
     }
+    
     private RenderFragment RenderDocument(MarkdownDocument doc)
         => builder =>
         {
@@ -28,5 +35,6 @@
             }
         };
 
-    private partial void RenderBlock(RenderTreeBuilder builder, Block block);
+    protected abstract void RenderBlock(RenderTreeBuilder builder, Block block);
+    protected abstract void RenderInline(RenderTreeBuilder builder, Inline inline);
 }

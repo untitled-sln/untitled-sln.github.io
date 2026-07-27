@@ -1,0 +1,16 @@
+﻿ .ctable {
+    background-color: aqua !important;
+    border-collapse: collapse;
+    width: auto;
+     table-layout: auto;
+}
+ .ctable th,
+ .ctable td {
+    border: 2px solid hsl(23 80% 51% / 0.99);
+    padding: 8px 12px;
+    text-align: left;
+}
+.ctable th {
+    background-color: rgb(255 255 255);
+    font-weight: bold;
+}
