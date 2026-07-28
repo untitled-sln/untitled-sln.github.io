@@ -9,7 +9,12 @@ using MudBlazor.Services;
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
-builder.Services.AddSingleton<ErrorService>();
-builder.Services.AddScoped(_ => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
-builder.Services.AddMudServices();
+ConfigureServices(builder.Services,builder.HostEnvironment.BaseAddress);
+static void ConfigureServices(IServiceCollection services, string baseAddress)
+{
+    services.AddSingleton<ErrorService>();
+    services.AddScoped(_ => new HttpClient { BaseAddress = new Uri(baseAddress) });
+    services.AddMudServices();
+}
+
 await builder.Build().RunAsync();

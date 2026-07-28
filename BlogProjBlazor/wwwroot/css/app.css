@@ -113,3 +113,19 @@ code {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
     text-align: start;
 }
+
+.nav-link,
+a.nav-link,
+.navbar-brand {
+    -webkit-user-drag: none;   /* Chrome/Safari */
+    -moz-user-drag: none;      /* Firefox */
+    -ms-user-drag: none;       /* IE */
+    user-drag: none;           /* 标准语法 */
+
+    /* 可选：禁止文本选择（双重保险） */
+    user-select: none;
+    -webkit-user-select: none;
+
+    /* 保持点击光标 */
+    cursor: pointer;
+}
